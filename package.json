@@ -1,0 +1,45 @@
+{
+  "name": "corporate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "postbuild": "node generate-sitemap.js"
+  },
+  "dependencies": {
+    "@portabletext/react": "^3.2.1",
+    "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
+    "@sanity/client": "^7.8.2",
+    "@sanity/image-url": "^1.1.0",
+    "jquery": "^3.7.1",
+    "react": "^18.3.1",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-pdf": "^10.1.0",
+    "react-router-dom": "^6.28.0",
+    "react-slick": "^0.31.0",
+    "react-toastify": "^11.0.5",
+    "sitemap": "^8.0.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "sass": "^1.90.0",
+    "vite": "^5.3.4"
+  }
+}
