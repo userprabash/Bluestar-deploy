@@ -98,7 +98,7 @@ export default function Footer() {
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="footer-bottom-link f-right">
                 <p style={{ color: "#333" }}>
-                  Website developed & maintained by{" "}
+                  Website developed by{" "}
                   <a
                     href="https://prabashnepal.com.np"
                     target="_blank"
@@ -107,7 +107,7 @@ export default function Footer() {
                   >
                     Prabash Nepal
                   </a>{" "}
-                  &{" "}
+                  & maintained by{" "}
                   <a
                     href="https://purushotambhandari.com.np"
                     target="_blank"
