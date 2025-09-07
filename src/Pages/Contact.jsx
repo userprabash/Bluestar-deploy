@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
+import SEO from "../Component/SEO";
 
 const SCRIPT_URL = import.meta.env.VITE_SCRIPT_URL_2; // Add in your .env
 
