@@ -207,7 +207,13 @@ export default function OrderNow() {
               <h2 className="mb-4 text-center">Quick Contact</h2>
               <ul className="list-unstyled fs-5">
                 <li className="mb-3">
-                  📞 <strong>Phone:</strong> 01-5351096
+                  📞 <strong>Phone:</strong>{" "}
+                  <a
+                    href="tel:015351096"
+                    className="hover:underline text-[#4E97FD]"
+                  >
+                    01-5351096
+                  </a>
                 </li>
                 <li className="mb-3">
                   📍 <strong>Location:</strong> Tripureshwor, Kathmandu
@@ -216,9 +222,16 @@ export default function OrderNow() {
                   🕒 <strong>Opening Hours:</strong> Sun–Fri: 10:00 AM – 7:00 PM
                 </li>
                 <li className="mb-3">
-                  ✉️ <strong>Email:</strong> bluestarsurgicalhouse@gmail.com
+                  ✉️ <strong>Email:</strong>{" "}
+                  <a
+                    href="mailto:info@bluestarsurgicalhouse.com.np"
+                    className="hover:underline text-[#4E97FD]"
+                  >
+                    info@bluestarsurgicalhouse.com.np
+                  </a>
                 </li>
               </ul>
+
               <div className="map-container mt-4">
                 <iframe
                   title="Google Map"

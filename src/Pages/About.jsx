@@ -28,10 +28,11 @@ function About() {
                 </div>
                 <ul className="breadcrumb-menu">
                   <li>
-                    <Link to="/">home</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
                     <span>
+                      {" "}
                       {">"}
                       {"  "}About
                     </span>

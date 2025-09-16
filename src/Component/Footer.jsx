@@ -22,6 +22,27 @@ export default function Footer() {
                     Committed to quality, reliability, and timely delivery.
                   </p>
                 </div>
+                <div class="footer-icon">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/share/1AucmKkRkH/"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <Link>
+                    <i class="fab fa-twitter"></i>
+                  </Link>
+                  <Link>
+                    <i class="fab fa-instagram"></i>
+                  </Link>
+                  <a
+                    href="https://wa.me/9779851078417?text=Hello%20I%20want%20to%20inquire"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -43,15 +64,21 @@ export default function Footer() {
                         About Us
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/products" style={{ color: "#007BFF" }}>
-                        Our Product
-                      </Link>
-                    </li>
+
                     <li>
                       <Link to="/contact" style={{ color: "#007BFF" }}>
                         Contact Us
                       </Link>
+                    </li>
+                    <li>
+                      <a
+                        href="https://bluestarsurgicalhouse.com.np/webmail"
+                        style={{ color: "#007BFF" }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Office login
+                      </a>
                     </li>
                   </ul>
                 </div>

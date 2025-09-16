@@ -105,11 +105,15 @@ const Contact = () => {
                       <i class="fa-solid fa-phone" />
                     </div>
                     <div className="contact-address-text">
-                      <span>phone number</span>
+                      <span>Phone Number</span>
                       <h4>
-                        01-5351096
+                        <a href="tel:015351096" className="hover:underline">
+                          01-5351096
+                        </a>
                         <br />
-                        01-5351086
+                        <a href="tel:015351086" className="hover:underline">
+                          01-5351086
+                        </a>
                       </h4>
                     </div>
                   </li>
@@ -118,14 +122,26 @@ const Contact = () => {
                       <i className="far fa-envelope-open" />
                     </div>
                     <div className="contact-address-text">
-                      <span>email number</span>
+                      <span>Email</span>
                       <h4
                         style={{
                           wordWrap: "break-word",
                           wordBreak: "break-all",
                         }}
                       >
-                        bluestarsurgicalhouse@gmail.com
+                        <a
+                          href="mailto:bluestarsurgicalhouse@gmail.com"
+                          className="hover:underline text-[#4E97FD]"
+                        >
+                          bluestarsurgicalhouse@gmail.com
+                        </a>
+                        <br />
+                        <a
+                          href="mailto:info@bluestarsurgicalhouse.com.np"
+                          className="hover:underline text-[#4E97FD]"
+                        >
+                          info@bluestarsurgicalhouse.com.np
+                        </a>
                       </h4>
                     </div>
                   </li>

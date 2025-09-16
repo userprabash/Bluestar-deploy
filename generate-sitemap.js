@@ -7,7 +7,8 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const siteUrl = "https://bluestarsurgicalhouse.com.np";
+// Always use www version for SEO consistency
+const siteUrl = "https://www.bluestarsurgicalhouse.com.np";
 
 async function generateSitemap() {
   const sitemap = new SitemapStream({ hostname: siteUrl });

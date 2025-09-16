@@ -1,7 +1,9 @@
 import { Helmet } from "react-helmet-async";
 
 export default function SEO({ title, description, url, image }) {
-  const logoImage = image || "https://bluestarsurgicalhouse.com.np/logo.png";
+  const logoImage =
+    image ||
+    "https://bluestarsurgicalhouse.com.np/assets/BLUESTAR-DDE_J2oE.png";
 
   return (
     <Helmet>
@@ -41,10 +43,7 @@ export default function SEO({ title, description, url, image }) {
             addressCountry: "NP",
           },
           openingHours: "Su-Fr 09:00-18:00",
-          sameAs: [
-            "https://www.facebook.com/yourpage",
-            "https://www.instagram.com/yourpage",
-          ],
+          sameAs: ["https://www.facebook.com/share/1AucmKkRkH/"],
         })}
       </script>
     </Helmet>

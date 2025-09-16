@@ -7,7 +7,7 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import { FaLocationDot } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
 import sanityClient from "../sanityClient";
 import bslogo from "../assets/img/logo/BLUESTAR.png";
 import NavbarItem from "./Navbarmenu";
@@ -130,13 +130,13 @@ function Header() {
                   <div className="header-top-right text-md-right">
                     <div className="shop-menu">
                       <a
-                        href="https://maps.app.goo.gl/jGutUp1GoETXSp5T8"
+                        href="mailto:info@bluestarsurgicalhouse.com.np"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 text-[#4E97FD] hover:underline"
                       >
-                        <FaLocationDot />
-                        Tripureshwor, Kathmandu
+                        <IoMdMail />
+                        info@bluestarsurgicalhouse.com.np
                       </a>
                     </div>
                   </div>

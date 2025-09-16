@@ -1,48 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-
-import { Autoplay, Pagination } from "swiper/modules"; // <-- Correct for Swiper v10+
-
-import image1 from "../assets/img/testimonial/03.png";
-import image2 from "../assets/img/testimonial/04.png";
-import image3 from "../assets/img/testimonial/05.png";
-import image4 from "../assets/img/testimonial/06.png";
+import { Autoplay, Pagination } from "swiper/modules";
+import sanityClient from "../sanityClient";
+import imageUrlBuilder from "@sanity/image-url";
 import bgImg from "../assets/img/bg/test.jpg";
 
-const testimonials = [
-  {
-    img: image1,
-    rating: 4.5,
-    text: "Bluestar Surgical House has been our trusted partner for over two years. Their surgical and lab equipment are of excellent quality, delivered on time, and supported by a professional team. They’ve truly simplified our procurement process.",
-    name: "Sajan",
-    role: "Client",
-  },
-  {
-    img: image2,
-    rating: 4.5,
-    text: "We rely on Bluestar Surgical House for our laboratory instruments, and they never disappoint. Their commitment to quality and customer service makes them stand out from other suppliers in Nepal.",
-    name: "Himal",
-    role: "Client",
-  },
-  {
-    img: image3,
-    rating: 4.5,
-    text: "The team at Bluestar House Suppliers goes above and beyond to understand our requirements. From surgical tools to pharmacy essentials, everything we’ve ordered has met international standards at competitive prices.",
-    name: "Sapana",
-    role: "Client",
-  },
-  {
-    img: image4,
-    rating: 4.5,
-    text: "What I appreciate most about Bluestar Surgical House is their after-sales support. They are quick to respond and always ensure customer satisfaction. It gives us peace of mind knowing we have a reliable partner.",
-    name: "Sitaram",
-    role: "Client",
-  },
-];
+const builder = imageUrlBuilder(sanityClient);
+const urlFor = (source) => builder.image(source).url();
 
 const Testimonials = () => {
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+    // Fetch full image object, not just URL
+    sanityClient
+      .fetch(
+        `*[_type == "testimonial"] | order(_createdAt desc) {
+          name,
+          role,
+          rating,
+          text,
+          image
+        }`
+      )
+      .then((data) => setTestimonials(data))
+      .catch(console.error);
+  }, []);
+
+  if (!testimonials.length) return <p>Loading testimonials...</p>;
+
   return (
     <div
       className="testimonial-area"
@@ -60,7 +48,7 @@ const Testimonials = () => {
 
         <Swiper
           modules={[Autoplay, Pagination]}
-          spaceBetween={40} // Increase spacing between slides
+          spaceBetween={40}
           slidesPerView={3}
           loop={true}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -70,7 +58,7 @@ const Testimonials = () => {
             768: { slidesPerView: 2, spaceBetween: 30 },
             1024: { slidesPerView: 3, spaceBetween: 30 },
           }}
-          style={{ padding: "50px 0" }} // add vertical spacing for the slider
+          style={{ padding: "50px 0" }}
         >
           {testimonials.map((item, index) => (
             <SwiperSlide key={index}>
@@ -78,10 +66,10 @@ const Testimonials = () => {
                 className="testimonial-slide"
                 style={{
                   background: "#fff",
-                  padding: "40px", // Increase padding
-                  borderRadius: "15px", // Slightly bigger rounded corners
+                  padding: "40px",
+                  borderRadius: "15px",
                   height: "100%",
-                  minHeight: "320px", // Bigger slide height
+                  minHeight: "320px",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -94,16 +82,19 @@ const Testimonials = () => {
                     marginBottom: "20px",
                   }}
                 >
-                  <img
-                    src={item.img}
-                    alt={item.name}
-                    style={{
-                      width: "90px",
-                      height: "90px",
-                      borderRadius: "50%",
-                      marginRight: "20px",
-                    }} // bigger image
-                  />
+                  {item.image?.asset && (
+                    <img
+                      src={urlFor(item.image.asset)}
+                      alt={item.name}
+                      style={{
+                        width: "90px",
+                        height: "90px",
+                        borderRadius: "50%",
+                        marginRight: "20px",
+                        objectFit: "cover",
+                      }}
+                    />
+                  )}
                   <div className="test-rating">
                     {[...Array(5)].map((_, i) => {
                       if (i < Math.floor(item.rating))
@@ -141,8 +132,7 @@ const Testimonials = () => {
                   }}
                 >
                   {item.text}
-                </p>{" "}
-                {/* slightly bigger text */}
+                </p>
                 <h4 style={{ marginTop: "20px", fontSize: "20px" }}>
                   {item.name}
                 </h4>

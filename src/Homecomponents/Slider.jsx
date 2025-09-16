@@ -2,12 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import { FaInstagram } from "react-icons/fa";
 
-import insta01 from "../assets/img/instagram/01.jpg";
-import insta02 from "../assets/img/instagram/02.jpg";
-import insta03 from "../assets/img/instagram/03.jpg";
-import insta04 from "../assets/img/instagram/04.jpg";
-import insta05 from "../assets/img/instagram/05.jpg";
-import insta06 from "../assets/img/instagram/06.jpg";
+import insta01 from "../assets/img/instagram/1.jpg";
+import insta02 from "../assets/img/instagram/2.png";
+import insta03 from "../assets/img/instagram/3.png";
+import insta04 from "../assets/img/instagram/004.jpg";
+import insta05 from "../assets/img/instagram/5.png";
+import insta06 from "../assets/img/instagram/mispa.jpg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -38,10 +38,7 @@ const InstagramSlider = () => {
             <div className="p-0" key={index}>
               <div className="instagram-wrapper">
                 <div className="instagram-img">
-              
-                    <img src={img} alt={`Instagram ${index + 1}`} />
-                    
-                
+                  <img src={img} alt={`Instagram ${index + 1}`} />
                 </div>
               </div>
             </div>

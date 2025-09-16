@@ -17173,11 +17173,9 @@ ul.cat li a:hover {
   border-radius: 50%;
   border: 2px solid #eaeaea;
 }
-.footer-icon a:last-child {
-  margin-right: 0;
-}
+
 .footer-icon a:hover {
-  border: #4e97fd;
+  border: 2px solid #4e97fd;
   color: #ffffff;
   background: #4e97fd;
 }

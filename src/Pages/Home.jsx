@@ -1,11 +1,9 @@
 import Banner from "../Homecomponents/banner.jsx";
-import Fprod from "../Homecomponents/firstproduct.jsx";
 import Products from "../Homecomponents/Product.jsx";
 import ReviewSlider from "../Homecomponents/ReviewSlider.jsx";
 import Brandimg from "../Homecomponents/Brandimg.jsx";
 import Slider from "../Homecomponents/Slider.jsx";
 import Aboutus from "../Homecomponents/Testimonial.jsx";
-import CategoriesTable from "../Homecomponents/Ourbrands.jsx";
 import SEO from "../Component/SEO.jsx";
 
 function Home() {
@@ -17,9 +15,7 @@ function Home() {
         url="https://bluestarsurgicalhouse.com.np/"
       />
       <Banner />
-      {/* <CategoriesTable /> */}
       <Aboutus />
-      {/* <Fprod /> */}
       <Products limit={16} />
       <ReviewSlider />
       <Brandimg />
