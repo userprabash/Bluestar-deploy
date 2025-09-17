@@ -1,0 +1,93 @@
+/* [project]/frontend/src/Style/Testimonial.scss.css [app-client] (css) */
+.testimonialsSection {
+  z-index: 1;
+  background-image: url("/img/1920x795_bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+}
+
+.testimonialsSection:before {
+  content: "";
+  z-index: -1;
+  background-color: rgba(0, 51, 68, .85);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sectionTitle {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.testimonialCard {
+  color: #fff;
+  text-align: left;
+  background: none;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.quoteIcon {
+  color: #00e5ff;
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+.testimonialTitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.testimonialText {
+  margin-bottom: 20px;
+  font-size: .95rem;
+}
+
+.author {
+  align-items: center;
+  gap: 15px;
+  display: flex;
+}
+
+.authorImage {
+  border-radius: 50%;
+}
+
+.location {
+  color: #cfd8dc;
+  font-size: .85rem;
+}
+
+.slick-dots li button:before {
+  color: #fff;
+  opacity: .5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  opacity: 1;
+}
+
+.slick-prev, .slick-next {
+  z-index: 10;
+  color: #000;
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #000;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=frontend_src_Style_Testimonial_scss_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+// fonts
+$base-font-size: 15;
+$base-font: "Rubik", sans-serif;
+$heading-font: 'Cormorant';
+
+
+
+// color
+$dark-gray: #1C263A;
+$body-color: #5D666F;
+$white: #fff;
+$light: #8188a9;
+$black: #000;
+$small-black: #333;
+$cyan: #848892;
+
+$theme-primary-color: #064ACB;
+$theme-primary-color2: #F3A952;
+$theme-primary-color3: #EC2526;
+$body-bg-color: #fff;
+$section-bg-color: #ECF3F7;
+$section-bg-color-s2: #F9F9F9;
+$section-bg-color-s3: #DFF8FF;
+$section-bg-color-s4: #F5F5F5;
+$text-color: #707070;
+$text-light-color: #7b7b7b;
+$heading-color: $dark-gray;
+$heading-color2: #3F3F3F;
+$border-color: rgba(93, 102, 111, 0.15);
+$border-color-s2: #E9ECEF;
+$theme-gradient: linear-gradient(90deg, #F3A952 0%, #064ACB 82.79%);
+// 
+.featured-section.style-3 {
+    background: $theme-primary-color;
+
+    padding: 15px 120px;
+
+    @media(max-width:1599px) {
+        padding: 15px 30px;
+    }
+
+    @media(max-width:1399px) {
+        padding: 15px;
+    }
+
+    .featured-item {
+        background: none;
+        padding: 0;
+        display: flex;
+        text-align: left;
+        align-items: center;
+
+        @media(max-width:400px) {
+            justify-content: center;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgba(255, 255, 255, 0.15);
+            text-align: center;
+            margin: 0;
+            margin-right: 10px;
+
+            i {
+                font-size: 30px;
+                color: $white;
+            }
+        }
+
+        .text {
+            h2 {
+                line-height: 20px;
+
+                a {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+
+            span {
+                color: $white;
+            }
+        }
+    }
+
+    .owl-nav {
+        display: none;
+    }
+}
+.featured-section .featured-category-slider .owl-nav .owl-prev,
+.featured-section .featured-category-slider .owl-nav .owl-next {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    transition: all 0.3s;
+    border-radius: 5px;
+    border: 0;
+    background: #fff;
+    z-index: 1;
+    font-size: 8px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.featured-section .featured-category-slider .owl-nav .owl-prev:hover,
+.featured-section .featured-category-slider .owl-nav .owl-next:hover {
+    background: #F3A952;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+
+    .featured-section .featured-category-slider .owl-nav .owl-prev,
+    .featured-section .featured-category-slider .owl-nav .owl-next {
+        display: none;
+    }
+}
+
+.featured-section .featured-category-slider .owl-nav .owl-prev {
+    right: 35px;
+}
+
+.featured-section .featured-category-slider .owl-dots {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .featured-section .featured-category-slider .owl-dots {
+        text-align: center;
+        bottom: -10px;
+        position: relative;
+        display: block;
+    }
+
+    .featured-section .featured-category-slider .owl-dots button {
+        width: 10px;
+        height: 12px;
+        border: 0;
+        background: #d4e6f5;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    .featured-section .featured-category-slider .owl-dots .owl-dot.active {
+        background-color: #064ACB;
+    }
+}
+
+.featured-section .featured-item {
+    text-align: center;
+    border-radius: 5px;
+    background: #ECF3F7;
+    padding: 25px 0;
+}
+
+.featured-section .featured-item .icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.featured-section .featured-item .icon i {
+    font-size: 60px;
+    line-height: unset;
+    color: #064ACB;
+}
+
+.featured-section .featured-item .text h2 {
+    margin-bottom: 0;
+    transition: all 0.3s ease-out 0s;
+}
+
+.featured-section .featured-item .text h2 a {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #1C263A;
+}
+
+.featured-section .featured-item .text h2:hover a {
+    color: #064ACB;
+}
+
+.featured-section .featured-item .text span {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}

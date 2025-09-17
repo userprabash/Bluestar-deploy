@@ -1,0 +1,62 @@
+/* [project]/frontend/src/Style/Counter.scss.css [app-client] (css) */
+.mad-section {
+  padding: 40px 0;
+}
+
+.mad-counters {
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  display: grid;
+}
+
+.mad-counter {
+  justify-content: center;
+  display: flex;
+}
+
+.mad-counter-inner {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.mad-counter-icon {
+  margin-bottom: 10px;
+}
+
+.mad-counter-icon img {
+  background: #b9ecf6;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+}
+
+.mad-counter-count {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.mad-counter-title {
+  color: #555;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .mad-counters {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 668px) {
+  .mad-counters {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/*# sourceMappingURL=frontend_src_Style_Counter_scss_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,184 @@
+/* [project]/frontend/src/Style/Contact.module.scss.module.css [app-client] (css) */
+.Contact-module-scss-module__-UT5jW__contactForm {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.Contact-module-scss-module__-UT5jW__sectionCapture {
+  margin-bottom: 50px;
+}
+
+.Contact-module-scss-module__-UT5jW__sectionHeading {
+  color: #212529;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.Contact-module-scss-module__-UT5jW__fieldRow {
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  display: flex;
+}
+
+.Contact-module-scss-module__-UT5jW__fieldCol {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .Contact-module-scss-module__-UT5jW__colMd6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .Contact-module-scss-module__-UT5jW__heightMd100 {
+    height: 100%;
+  }
+}
+
+.Contact-module-scss-module__-UT5jW__fieldLabel {
+  color: #495057;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+  font-weight: 500;
+  display: block;
+}
+
+.Contact-module-scss-module__-UT5jW__formInput, .Contact-module-scss-module__-UT5jW__formTextarea {
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  display: block;
+}
+
+.Contact-module-scss-module__-UT5jW__formInput::placeholder, .Contact-module-scss-module__-UT5jW__formTextarea::placeholder {
+  color: #adb5bd;
+}
+
+.Contact-module-scss-module__-UT5jW__formInput:focus, .Contact-module-scss-module__-UT5jW__formTextarea:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #67887f;
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(130, 160, 152, .25);
+}
+
+.Contact-module-scss-module__-UT5jW__formTextarea {
+  resize: vertical;
+}
+
+.Contact-module-scss-module__-UT5jW__custCheckboxLabel {
+  cursor: pointer;
+  color: #495057;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  align-items: flex-start;
+  font-size: .9rem;
+  line-height: 1.4;
+  display: flex;
+  position: relative;
+}
+
+.Contact-module-scss-module__-UT5jW__custCheckboxLabel .Contact-module-scss-module__-UT5jW__custCheckbox {
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.Contact-module-scss-module__-UT5jW__custCheckboxLabel .Contact-module-scss-module__-UT5jW__custCheck {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  transition: background-color .2s;
+  position: relative;
+  top: 2px;
+}
+
+.Contact-module-scss-module__-UT5jW__custCheckboxLabel .Contact-module-scss-module__-UT5jW__custCheck:after {
+  content: "";
+  border: 2px solid #fff;
+  border-width: 0 2px 2px 0;
+  width: 6px;
+  height: 11px;
+  display: none;
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  transform: rotate(45deg);
+}
+
+.Contact-module-scss-module__-UT5jW__custCheckboxLabel .Contact-module-scss-module__-UT5jW__custCheckbox:checked ~ .Contact-module-scss-module__-UT5jW__custCheck {
+  background-color: #82a098;
+  border-color: #82a098;
+}
+
+.Contact-module-scss-module__-UT5jW__custCheckboxLabel .Contact-module-scss-module__-UT5jW__custCheckbox:checked ~ .Contact-module-scss-module__-UT5jW__custCheck:after {
+  display: block;
+}
+
+.Contact-module-scss-module__-UT5jW__custCheckboxLabel .Contact-module-scss-module__-UT5jW__loginRead a {
+  color: #555;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.Contact-module-scss-module__-UT5jW__custCheckboxLabel .Contact-module-scss-module__-UT5jW__loginRead a:hover {
+  color: #2f2f2f;
+}
+
+.Contact-module-scss-module__-UT5jW__contactFormBtn {
+  margin-top: 20px;
+}
+
+.Contact-module-scss-module__-UT5jW__btnStyle2 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #adc1bc;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+}
+
+.Contact-module-scss-module__-UT5jW__btnStyle2.Contact-module-scss-module__-UT5jW__disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.Contact-module-scss-module__-UT5jW__btnStyle2.Contact-module-scss-module__-UT5jW__active {
+  cursor: pointer;
+  background-color: #6c8e85;
+}
+
+.Contact-module-scss-module__-UT5jW__btnStyle2.Contact-module-scss-module__-UT5jW__active:hover {
+  background-color: #5c7972;
+  border-color: #5c7972;
+}
+
+.Contact-module-scss-module__-UT5jW__btnStyle2.Contact-module-scss-module__-UT5jW__opacity50 {
+  opacity: .5;
+}
+
+/*# sourceMappingURL=frontend_src_Style_Contact_module_scss_module_52527985.css.map*/

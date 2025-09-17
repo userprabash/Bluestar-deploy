@@ -1,0 +1,61 @@
+.partnersSection {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+
+    .title {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .slider {
+        .slick-slide {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .slick-arrow {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            z-index: 1;
+
+            &:before {
+                color: #333;
+                font-size: 20px;
+            }
+        }
+
+        .slick-prev {
+            left: -15px;
+        }
+
+        .slick-next {
+            right: -15px;
+        }
+    }
+
+    .partnerItem {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+.title{
+    text-align: center !important;
+    margin-top: 10px;
+}

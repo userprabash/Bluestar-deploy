@@ -1,0 +1,162 @@
+/* [project]/frontend/src/Style/Products.scss.css [app-client] (css) */
+.mad-product {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  transition: all .3s;
+  display: flex;
+}
+
+.mad-product:hover {
+  border-color: #222;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+
+.mad-product-image {
+  aspect-ratio: 1;
+  background: #f9f9f9;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.mad-product-image img {
+  object-fit: cover;
+  border-radius: 8px;
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.mad-product-image .sale-badge {
+  color: #fff;
+  background: #e63946;
+  border-radius: 50px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.mad-actions {
+  opacity: 0;
+  flex-direction: column;
+  gap: 8px;
+  transition: all .3s;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+}
+
+.mad-product:hover .mad-actions {
+  opacity: 1;
+  right: 12px;
+}
+
+.mad-actions a {
+  color: #444;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  transition: all .2s;
+  display: flex;
+}
+
+.mad-actions a:hover {
+  color: #111;
+  background: #f3f4f6;
+}
+
+.mad-product-description {
+  margin-bottom: 12px;
+}
+
+.mad-product-cat {
+  color: #6b7280;
+  margin-bottom: 4px;
+  font-size: 13px;
+  display: block;
+}
+
+.mad-product-title a {
+  color: #111;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mad-product-title a:hover {
+  color: #007bff;
+}
+
+.mad-rating {
+  color: #f59e0b;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.mad-product-price {
+  color: #16a34a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mad-product-price.old {
+  color: #9ca3af;
+  margin-left: 8px;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.mad-cart {
+  color: #111;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+  transition: all .3s;
+  display: inline-flex;
+}
+
+.mad-cart:hover {
+  color: #fff;
+  background: #111;
+}
+
+.mad-info-item {
+  color: #6b7280;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.mad-progress-bars {
+  background: #f3f4f6;
+  border-radius: 50px;
+  height: 6px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.mad-progress-bar-indicator {
+  background: #16a34a;
+  border-radius: 50px;
+  height: 100%;
+}
+
+/*# sourceMappingURL=frontend_src_Style_Products_scss_css_bad6b30c._.single.css.map*/

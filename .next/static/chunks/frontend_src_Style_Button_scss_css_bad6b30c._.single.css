@@ -1,0 +1,166 @@
+/* [project]/frontend/src/Style/Button.scss.css [app-client] (css) */
+.btn-style-1, .btn-style-2, .small-btn-style {
+  color: #fff;
+  text-transform: capitalize;
+  z-index: 1;
+  background: #064acb;
+  border: 0;
+  border-radius: 30px;
+  padding: 15px 70px 15px 35px;
+  font-family: Cormorant;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-style-1:before, .btn-style-2:before, .small-btn-style:before {
+  content: "";
+  text-align: center;
+  color: #1c263a;
+  background: #fff;
+  border-radius: 30px;
+  width: 46px;
+  height: 46px;
+  font-family: icomoon;
+  font-size: 12px;
+  line-height: 46px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.btn-style-1:after, .btn-style-2:after, .small-btn-style:after {
+  z-index: -1;
+  content: "";
+  background: #053ca3;
+  border-radius: 100px;
+  width: 0;
+  height: 100%;
+  transition: all .4s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-style-1.btn-style-1-s3, .btn-style-2.btn-style-1-s3, .small-btn-style.btn-style-1-s3 {
+  color: #064acb;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-style-1.btn-style-1-s3:after, .btn-style-2.btn-style-1-s3:after, .small-btn-style.btn-style-1-s3:after {
+  border: 1px solid #fff;
+}
+
+.btn-style-1.btn-style-1-s4, .btn-style-2.btn-style-1-s4, .small-btn-style.btn-style-1-s4 {
+  color: #fff;
+  background: #064acb;
+}
+
+.btn-style-1.btn-style-1-s4:after, .btn-style-2.btn-style-1-s4:after, .small-btn-style.btn-style-1-s4:after {
+  border: 1px solid #064acb;
+}
+
+.btn-style-1:hover, .btn-style-1:focus, .btn-style-1:active, .btn-style-2:hover, .btn-style-2:focus, .btn-style-2:active, .small-btn-style:hover, .small-btn-style:focus, .small-btn-style:active {
+  color: #fff;
+}
+
+.btn-style-1:hover:after, .btn-style-1:focus:after, .btn-style-1:active:after, .btn-style-2:hover:after, .btn-style-2:focus:after, .btn-style-2:active:after, .small-btn-style:hover:after, .small-btn-style:focus:after, .small-btn-style:active:after {
+  width: 100%;
+  left: 0%;
+  right: auto;
+}
+
+.btn-style-1:hover:after, .btn-style-2:hover:after, .small-btn-style:hover:after {
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .btn-style-1, .btn-style-2, .small-btn-style {
+    font-size: 18px;
+    font-size: calc-rem-value(18);
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-style-1, .btn-style-2, .small-btn-style {
+    padding: 10px 40px 10px 18px;
+    font-size: 14px;
+  }
+
+  .btn-style-1:before, .btn-style-2:before, .small-btn-style:before {
+    width: 20px;
+    height: 20px;
+    font-size: 7px;
+    line-height: 20px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.btn-style-2 {
+  color: #1c263a;
+  background: #fff;
+  border-color: #1c263a;
+}
+
+.btn-style-2:before {
+  color: #fff;
+  background-color: #064acb;
+}
+
+.btn-style-2:hover {
+  color: #1c263a;
+}
+
+.small-btn-style {
+  color: #1c263a;
+  background: #fff;
+  border-color: #1c263a;
+  padding: 5px 35px 5px 12px;
+  font-size: 14px;
+}
+
+.small-btn-style:before {
+  color: #fff;
+  background-color: #064acb;
+  width: 20px;
+  height: 20px;
+  font-size: 7px;
+  line-height: 20px;
+}
+
+@media (max-width: 767px) {
+  .small-btn-style:before {
+    top: 6px;
+    right: 6px;
+  }
+}
+
+.small-btn-style:hover {
+  color: #1c263a;
+}
+
+.small-btn-style:hover:after {
+  background: #ebebeb;
+}
+
+.small-btn-style.primary {
+  color: #fff;
+  background: #064acb;
+}
+
+.small-btn-style.primary:before {
+  color: #1c263a;
+  background-color: #fff;
+}
+
+.small-btn-style.primary:after {
+  background: #053ca3;
+}
+
+/*# sourceMappingURL=frontend_src_Style_Button_scss_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,228 @@
+/* [project]/frontend/src/Style/icomoon.css [app-client] (css) */
+@font-face {
+  font-family: icomoon;
+  src: url("../media/icomoon.04893508.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  font-family: icomoon !important;
+}
+
+.icon-user:before {
+  content: "";
+}
+
+.icon-time:before {
+  content: "";
+}
+
+.icon-instagram-logo:before {
+  content: "";
+}
+
+.icon-contact:before {
+  content: "";
+}
+
+.icon-shopping-cart:before {
+  content: "";
+}
+
+.icon-calendar:before {
+  content: "";
+}
+
+.icon-location:before {
+  content: "";
+}
+
+.icon-star:before {
+  content: "";
+}
+
+.icon-quality:before {
+  content: "";
+}
+
+.icon-minus:before {
+  content: "";
+}
+
+.icon-angle-right:before {
+  content: "";
+}
+
+.icon-balanced-diet:before {
+  content: "";
+}
+
+.icon-cart:before {
+  content: "";
+}
+
+.icon-cashback:before {
+  content: "";
+}
+
+.icon-discount:before {
+  content: "";
+}
+
+.icon-email:before {
+  content: "";
+}
+
+.icon-food:before {
+  content: "";
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-Hum-menu:before {
+  content: "";
+}
+
+.icon-icon-check:before {
+  content: "";
+}
+
+.icon-icon-circle-empty:before {
+  content: "";
+}
+
+.icon-icon_close:before {
+  content: "";
+}
+
+.icon-icon_close_2:before {
+  content: "";
+}
+
+.icon-icon_minus_2:before {
+  content: "";
+}
+
+.icon-icon_plus_alt:before {
+  content: "";
+}
+
+.icon-icon_tags:before {
+  content: "";
+}
+
+.icon-left-and-right-arrows-1:before {
+  content: "";
+}
+
+.icon-lucide_search:before {
+  content: "";
+}
+
+.icon-mask-1:before {
+  content: "";
+}
+
+.icon-material-symbols_keyboard-arrow-down-rounded:before {
+  content: "";
+}
+
+.icon-medical:before {
+  content: "";
+}
+
+.icon-medicine:before {
+  content: "";
+}
+
+.icon-medicine2:before {
+  content: "";
+}
+
+.icon-open-eye-1:before {
+  content: "";
+}
+
+.icon-Path:before {
+  content: "";
+}
+
+.icon-phone:before {
+  content: "";
+}
+
+.icon-placeholder:before {
+  content: "";
+}
+
+.icon-privacy:before {
+  content: "";
+}
+
+.icon-product:before {
+  content: "";
+}
+
+.icon-shipped:before {
+  content: "";
+}
+
+.icon-skincare:before {
+  content: "";
+}
+
+.icon-stethoscope:before {
+  content: "";
+}
+
+.icon-svgexport-4:before {
+  content: "";
+}
+
+.icon-svgexport:before {
+  content: "";
+}
+
+.icon-svgexport2:before {
+  content: "";
+}
+
+.icon-user-1:before {
+  content: "";
+}
+
+.icon-Vector:before {
+  content: "";
+}
+
+.icon-angale-left:before {
+  content: "";
+}
+
+.icon-angale-right:before {
+  content: "";
+}
+
+.icon-angale-right2:before {
+  content: "";
+}
+
+.icon-angale-right-3:before {
+  content: "";
+}
+
+.icon-vehicle:before {
+  content: "";
+}
+
+/*# sourceMappingURL=frontend_src_Style_icomoon_css_bad6b30c._.single.css.map*/

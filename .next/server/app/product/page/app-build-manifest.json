@@ -1,0 +1,28 @@
+{
+  "pages": {
+    "/product/page": [
+      "static/chunks/9e883_next_dist_6ea86932._.js",
+      "static/chunks/frontend_src_app_favicon_ico_mjs_fcc3eca7._.js",
+      "static/chunks/frontend_f9b26b4d._.css",
+      "static/chunks/9e883_next_24d13781._.js",
+      "static/chunks/9e883_react-icons_fa_index_mjs_e5db9048._.js",
+      "static/chunks/9e883_react-icons_lib_0c48b1b3._.js",
+      "static/chunks/frontend_src_Components_Header_jsx_a7a78cb2._.js",
+      "static/chunks/frontend_src_app_layout_c11d305c.js",
+      "static/chunks/9e883_next_dist_client_components_builtin_global-error_86b0e130.js",
+      "static/chunks/9e883_@sanity_262adbc5._.js",
+      "static/chunks/9e883_79d259c8._.js",
+      "static/chunks/frontend_src_ef581666._.js",
+      "static/chunks/frontend_src_app_product_page_86b0e130.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_51deae60._.js",
+      "static/chunks/9e883_next_dist_compiled_react-dom_33d456f8._.js",
+      "static/chunks/9e883_next_dist_compiled_next-devtools_index_e18dabda.js",
+      "static/chunks/9e883_next_dist_compiled_649610a4._.js",
+      "static/chunks/9e883_next_dist_client_af6cb9d5._.js",
+      "static/chunks/9e883_next_dist_0e511d54._.js",
+      "static/chunks/9e883_@swc_helpers_cjs_652634af._.js",
+      "static/chunks/frontend_a0ff3932._.js",
+      "static/chunks/turbopack-frontend_a50d7e93._.js"
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+/* [project]/frontend/src/app/globals.css [app-client] (css) */
+body {
+  font-family: Inter, Roboto, Segoe UI, sans-serif !important;
+}
+
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+.map-area {
+  width: 100%;
+  padding: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.b-button a {
+  text-transform: uppercase;
+  color: #333;
+  background: linear-gradient(to right, #00f 0%, #00f 100%) 0 0 / 0% 100% no-repeat;
+  -webkit-background-clip: text;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  text-decoration: none;
+  transition: background-size .6s;
+  display: inline-flex;
+  position: relative;
+}
+
+.b-button a:after {
+  content: "";
+  transform-origin: 0;
+  background: #00f;
+  width: 100%;
+  height: 2px;
+  transition: transform .6s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+}
+
+.b-button a:hover {
+  background-size: 100% 100%;
+}
+
+.b-button a:hover:after {
+  transform: scaleX(1);
+}
+
+.b-button a svg {
+  margin-left: 8px;
+  transition: transform .3s;
+}
+
+.b-button a:hover svg {
+  transform: translateX(4px);
+}
+
+/*# sourceMappingURL=frontend_src_app_globals_css_bad6b30c._.single.css.map*/
